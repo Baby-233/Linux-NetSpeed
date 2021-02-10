@@ -5,9 +5,9 @@ centos：yum install ca-certificates wget -y && update-ca-trust force-enable
 debian/ubuntu：apt-get install ca-certificates wget -y && update-ca-certificates
 
 不卸载内核版本
-wget -N "https://github.000060000.xyz/tcpx.sh" && chmod +x tcpx.sh && ./tcpx.sh
+wget -N "https://github.000060000.xyz/tcpx.sh" --no-check-certificate && chmod +x tcpx.sh && ./tcpx.sh
 卸载内核版本
-wget -N "https://github.000060000.xyz/tcp.sh" && chmod +x tcp.sh && ./tcp.sh
+wget -N "https://github.000060000.xyz/tcp.sh" --no-check-certificate && chmod +x tcp.sh && ./tcp.sh
 
 双持bbr+锐速
 bbr 添加
